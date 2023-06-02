@@ -1,0 +1,48 @@
+:root {
+  --header-height: 5rem;
+  --outline-padding: 1rem;
+  --comex-primary-color: #2b3d6d;
+  --comex-secondary-color: #e11f1c;
+  --central-primary-color: #f68a20;
+  --central-secondary-color: #fece64;
+  --white: #ffffff;
+  --primaryColor: #2b3d6d;
+  --degradeColor: rgb(150, 146, 134);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  header {
+    height: var(--header-height);
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: var(--outline-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  
+  footer {
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+  }
+  

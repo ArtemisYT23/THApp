@@ -1,0 +1,100 @@
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background-color: azure;
+}
+
+.login-container>form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  /* background-color: rgba(28, 75, 228, 0.295); */
+}
+
+.login-container>form>img {
+  width: 100%;
+}
+
+.login-container>form>input[type="text"],
+.login-container>form>input[type="password"] {
+  height: 3rem;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: 1px solid var(--primaryColor);
+  outline: none;
+  border-radius: 53px;
+}
+
+.login-container>form>input[type="text"]::placeholder,
+.login-container>form>input[type="password"]::placeholder {
+  text-align: center;
+}
+
+.login-container>form>input[type="submit"] {
+  width: 80%;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: var(--comex-primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 53px;
+}
+
+.error-container {
+  position: absolute;
+  bottom: 0;
+  right: calc(12%);
+  height: 3rem;
+  width: 80%;
+  background-color: var(--comex-primary-color);
+  color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 53px;
+  padding-left: 10%;
+}
+
+@media screen and (min-width: 770px) {
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  .login-container>form {
+    width: 40%;
+    height: 60%;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);    
+    background-color: rgba(28, 75, 228, 0.295);
+  }
+
+  .login-container>form>img {
+    width: 80%;
+  }
+
+  .login-container>form>input[type="text"] {
+    width: 80%;
+  }
+
+  .error-container {
+    position: absolute;
+    bottom: 0;
+    right: calc(12%);
+    height: 3rem;
+    width: 80%;
+    background-color: var(--comex-primary-color);
+    color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 53px;
+    padding-right: 10%;    
+  }
+}

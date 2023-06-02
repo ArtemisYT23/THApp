@@ -1,0 +1,33 @@
+.header-container {
+  height: var(--header-height);  
+  background-color: var(--primaryColor);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  padding: 0 0 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  position: sticky;
+  top: 0;  
+}
+
+.header-container > span {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.header-container > .header-selector,
+.header-container > .return-container {
+  height: 100%;
+  width: var(--header-height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.header-container svg {
+  width: 2rem;
+  height: 2rem;
+}

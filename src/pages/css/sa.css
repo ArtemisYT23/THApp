@@ -1,0 +1,23 @@
+.super-admin-container {
+  height: calc(100% - var(--header-height));
+}
+
+.super-admin-container > .user-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.super-admin-container > .user-form-container > select {
+  width: 80%;
+  height: 3rem;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+.super-admin-container > .user-form-container > input[type="button"] {
+  width: 40%;
+  height: 3rem;
+  font-size: 1.5rem;
+}

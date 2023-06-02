@@ -1,0 +1,218 @@
+.report-container {
+  height: 100%;
+  padding-top: var(--header-height);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-report-container {
+  height: var(--header-height);
+  background: linear-gradient(90deg, var(--primaryColor) 0%, var(--degradeColor) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 7px 7px;
+}
+
+.header-report-container > a {
+  height: 50%;
+  margin-left: 1rem;
+}
+
+.header-report-container img {
+  height: 100%;
+}
+
+.header-report-container > span {
+  color: var(--white);
+}
+
+.footer-report-container {
+  height: calc(var(--header-height) * 1.5);
+  background-color: var(--primaryColor);
+  left: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-report-container > button {
+  height: 50%;
+  width: 40%;
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+  border-radius: 53px;
+  border: none;
+}
+
+.filter-container {
+  width: 100%;
+  /* height: calc(var(--header-height) * 1.5); */
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 2px solid var(--primaryColor);
+}
+
+.filter-container > div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-container > div > select,
+.filter-container > div > input[type="date"] {
+  width: 48%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid var(--primaryColor);
+  padding-left: 1rem;
+  border-radius: 53px;
+}
+
+.filter-container > option {
+  color: #1c1c1c;
+}
+
+.main-report-container {
+  height: 70%;
+  width: 100%;
+  overflow-y: scroll;
+  padding-bottom: calc(var(--header-height) * 1.5);
+  position: relative;
+}
+table,
+th,
+td {
+  border: 1px solid #1c1c1c;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+th {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+thead th {
+  width: 15%;
+}
+
+tbody td {
+  border-collapse: collapse;
+}
+
+#employee-table {
+  width: 100%;
+  border: 1px solid #1c1c1c;
+  border-radius: 13px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border-radius: 10px;
+}
+
+.Container-DataFilter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.Child-Filter {
+  width: 20%;
+  height: 100%;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.Selected {
+  width: 80%;
+  height: 3rem;
+  font-weight: bold;
+  border-radius: 13px;
+  text-align: center;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+  outline: none;
+  cursor: pointer;
+  margin: 0 0 1rem 0;
+}
+
+.NameLabel {
+  color: var(--primaryColor);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.SearchButton {
+  width: 110px;
+  height: 2.5rem;
+  color: #fff;
+  background: linear-gradient(90deg, var(--primaryColor) 0%, var(--degradeColor) 100%);
+  border-radius: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.Child-Data {
+  width: 80%;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container-Table {
+  width: 100%;
+  height: 500px;
+}
+
+.ButtonDetail {
+  color: white;
+  background: linear-gradient(90deg, var(--primaryColor) 0%, var(--degradeColor) 100%);
+  width: 80px;
+  height: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled{
+  background: rgb(192, 192, 192);
+  cursor: default;
+}
+
+@media (max-width: 767px) {
+  .Container-DataFilter {
+    flex-direction: column;
+  }
+
+  .Child-Filter {
+    width: 100%;
+    height: 400px;
+  }
+
+  .Child-Data {
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+.checked-container {
+  height: calc(100vh - var(--outline-padding));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.checked-container > .image-container {
+  height: 100%;
+  width: 100%;
+}
+
+.checked-container > .image-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.checked-container > .clock-container {
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(90deg, var(--primaryColor) 0%, var(--degradeColor) 100%);
+  width: 100%;
+  font-size: 3rem;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checked-container > .map-container {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 770px) {
+  .checked-container {
+    align-items: center;
+    padding: 0 30rem;
+  }
+}
